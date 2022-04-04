@@ -1,0 +1,97 @@
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+  
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-start a {
+  animation: flash 1s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1em 2em;
+  margin: 10px;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #cccccc;
+  box-shadow: 0 5px 0 #aaaaaa;
+  transition: 0.3s;
+}
+
+.button-start a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button-start a:hover {
+  transform: translateY(3px);
+  text-decoration: none;
+  box-shadow: 0 2px 0 #aaaaaa;
+}
+
+
+.button-up {
+  animation: none;
+	width: 60px;
+	height: 38px;
+	background: #FFF;
+	border: 1px solid #2a82a3;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #2a82a3;
+	padding: 42px 20px 20px;
+  margin: 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+}
+.button-up:hover {
+	background: #2a82a3;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
+
+
+.button-down {
+  animation: none;
+	width: 60px;
+	height: 38px;
+	background: #FFF;
+	border: 1px solid #FF82B2;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #FF82B2;
+	padding: 42px 20px 20px;
+  margin: 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+}
+.button-down:hover {
+	background: #FF82B2;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
