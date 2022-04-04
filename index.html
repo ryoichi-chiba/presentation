@@ -2,34 +2,43 @@
 <html lang="ja">
 
 <head>    
-  <title>Digital In Garage</title>
+  <title>HIGH and LOW game</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2 class="first">Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> もしくは、<font color="blue"> F12 </font><br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2 class="second">下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
+  <h1>[ハイ & ロー Game]</h1>
+
+  <div class="button-start">
+    <a href="#" class="button-start">START</a>
+  </div>
 
   <div>
-    豆知識：
-    <ul>
-      <li>カメは爬虫類です。</li>
-      <li>カメの体をおおう固い部分は甲羅と呼ばれます。</li>
-      <li>カメの中には3000年以上生きるものもあります。</li>
-      <li>カメはアメリカのほとんどの州で自動車を合法的に運転できません。</li>
-    </ul>
-    <p>
-      カメの画像は<a href="https://imgur.com/a/rYecfE0">ここ</a>
-      をクリックしてください。
-    </p>
+    <a href="#" class="button-up">UP</a>
   </div>
+
+  <div>
+    <a href="#" class="button-down">DOWN</a>
+  </div>
+
+  <h3 class="currentMessage">現在のカード： 
+    <var class="current">currentCard</var>
+  </h3>
+
+  <h3 class="nextMessage">次のカード：
+    <var class="next">nextCard</var>
+  </h3>
+
+  <h4 class="winlose">結果：
+    <var class="result" >resultMessage</var>
+  </h4>
+
+  <h4 class = "winlose">連勝数：
+    <var class="consective"></var> 
+  </h4>
 
   <script type="text/javascript" src="modules/lodash.js"></script>
   <script type="text/javascript" src="modules/test-boilerplte.js"></script>
